@@ -11,7 +11,7 @@ class News extends Model {
      *
      * @var array
      */
-    protected $fillable = ['name'];
+    protected $fillable = ['name','text'];
 
     public function user() {
         return $this->belongsTo(User::class);
